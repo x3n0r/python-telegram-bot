@@ -9,4 +9,6 @@ apt-get install hwinfo
 git clone 'https://github.com/x3n0r/python-telegram-bot.git'
 apt-get install python3-pip
 apt-get install emacs
-pip3 install request
+apt-get install python3-setuptools
+pip3 install requests
+service networking restart
