@@ -1,0 +1,12 @@
+export http_proxy=http://<user>:<passwd>@proxy.aeat.allianz.at:8080
+export https_proxy=https://<user>:<passwd>@proxy.aeat.allianz.at:8080
+apt-get update
+apt-get install console-data
+loadkeys de
+apt-get install apt-file
+isc-dhcp-client  ==> dhclient eth1
+apt-get install hwinfo
+git clone 'https://github.com/x3n0r/python-telegram-bot.git'
+apt-get install python3-pip
+apt-get install emacs
+pip3 install request
