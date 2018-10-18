@@ -1,0 +1,3 @@
+Naturally, the script you want to be executed as a service should go to e.g. /usr/local/bin/hit.sh, and the above code should go to /etc/init.d/hitservice.
+
+For each runlevel which needs this service running, you will need to create a respective symlink. For example, a symlink named /etc/init.d/rc5.d/S99hitservice will start the service for runlevel 5. Of course, you can still start and stop it manually via service hitservice start/service hitservice stop

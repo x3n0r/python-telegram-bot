@@ -1,0 +1,16 @@
+[Unit]
+Description=Telegram bot service
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+ExecStart=/etc/init.d/botservice start
+ExecReload=/etc/init.d/botservice reload
+ExecStop=/etc/init.d/botservice stop
+
+
+[Install]
+WantedBy=multi-user.target
